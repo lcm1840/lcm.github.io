@@ -1,0 +1,19 @@
+docker run -dit \
+  -v $PWD/ql/data:/ql/data \
+  -p 5710:5700 \
+  --name qinglong \
+  --hostname qinglong \
+  --restart unless-stopped \
+  whyour/qinglong:2.16.5
+
+
+docker run -dit \
+  -v $PWD/ql1/data:/ql/data \
+  -p 5712:5700 \
+  --name qinglong1 \
+  --hostname qinglong1 \
+  --restart unless-stopped \
+  whyour/qinglong:latest
+
+/var/lib/docker/overlay2/9bc952266e2c0dbe490237743dd171b564b043bb3905819ee7914a5d984cae15/merged/usr
+--restart always \
