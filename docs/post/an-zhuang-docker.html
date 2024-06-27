@@ -9,91 +9,95 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="安装之前现卸载系统上原有的Docker
-yum remove docker \
+<meta name="description" content="## [安装之前现卸载系统上原有的Docker]
+`yum remove docker \`
 >                   docker-client \
 >                   docker-client-latest \
 >                   docker-common \
 >                   docker-latest \
 >                   docker-latest-logrotate \
 >                   docker-logrotate \
->                   docker-engine
+>                   docker-engine`
 
-2、安装需要的安装包yum-utils
-yum install -y yum-utils
-3、设置镜像仓库地址
-yum-config-manager \
+## 2、安装需要的安装包yum-utils
+`yum install -y yum-utils`
+## 3、设置镜像仓库地址
+`yum-config-manager \
     --add-repo \
-    https://download.docker.com/linux/centos/docker-ce.repo   ##此地址为官方的仓库地址，在国内建议不要用
- yum-config-manager \
+    https://download.docker.com/linux/centos/docker-ce.repo` 
+  ##此地址为官方的仓库地址，在国内建议不要用
+ `yum-config-manager \
   --add-repo \
-   http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo  #阿里云的镜像仓库地址
-4、安装docker相关的引擎
+   http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo` 
+ #阿里云的镜像仓库地址
+## 4、安装docker相关的引擎
 #先更新yum软件包索引
- 	yum makecache fase 
-默认安装最新的docker
-yum install docker-ce docker-ce-cli containerd.io
-5、启动docker
-systemctl start docker
-systemctl enable docker
+ 	`yum makecache fase` 
+## 默认安装最新的docker
+`yum install docker-ce docker-ce-cli containerd.io`
+## 5、启动docker
+`systemctl start docker`
+`systemctl enable docker`
 验证安装是否成功
-docker version
+`docker version`
 
-重启容器
-docker restart r
+## 重启容器
+`docker restart r`
 
 
-docker ps -a
+`docker ps -a`
 
-docker rm                 <CONTAINER_ID or CONTAINER_NAME>
-docker rm -f               <CONTAINER_ID or CONTAINER_NAME>
+`docker rm `                <CONTAINER_ID or CONTAINER_NAME>
+`docker rm -f `              <CONTAINER_ID or CONTAINER_NAME>
 
-docker images
-docker rmi         <镜像ID>
-docker rmi -f     <镜像ID>。">
+`docker images`
+`docker rmi `        <镜像ID>
+`docker rmi -f `    <镜像ID>。">
 <meta property="og:title" content="安装docker">
-<meta property="og:description" content="安装之前现卸载系统上原有的Docker
-yum remove docker \
+<meta property="og:description" content="## [安装之前现卸载系统上原有的Docker]
+`yum remove docker \`
 >                   docker-client \
 >                   docker-client-latest \
 >                   docker-common \
 >                   docker-latest \
 >                   docker-latest-logrotate \
 >                   docker-logrotate \
->                   docker-engine
+>                   docker-engine`
 
-2、安装需要的安装包yum-utils
-yum install -y yum-utils
-3、设置镜像仓库地址
-yum-config-manager \
+## 2、安装需要的安装包yum-utils
+`yum install -y yum-utils`
+## 3、设置镜像仓库地址
+`yum-config-manager \
     --add-repo \
-    https://download.docker.com/linux/centos/docker-ce.repo   ##此地址为官方的仓库地址，在国内建议不要用
- yum-config-manager \
+    https://download.docker.com/linux/centos/docker-ce.repo` 
+  ##此地址为官方的仓库地址，在国内建议不要用
+ `yum-config-manager \
   --add-repo \
-   http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo  #阿里云的镜像仓库地址
-4、安装docker相关的引擎
+   http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo` 
+ #阿里云的镜像仓库地址
+## 4、安装docker相关的引擎
 #先更新yum软件包索引
- 	yum makecache fase 
-默认安装最新的docker
-yum install docker-ce docker-ce-cli containerd.io
-5、启动docker
-systemctl start docker
-systemctl enable docker
+ 	`yum makecache fase` 
+## 默认安装最新的docker
+`yum install docker-ce docker-ce-cli containerd.io`
+## 5、启动docker
+`systemctl start docker`
+`systemctl enable docker`
 验证安装是否成功
-docker version
+`docker version`
 
-重启容器
-docker restart r
+## 重启容器
+`docker restart r`
 
 
-docker ps -a
+`docker ps -a`
 
-docker rm                 <CONTAINER_ID or CONTAINER_NAME>
-docker rm -f               <CONTAINER_ID or CONTAINER_NAME>
+`docker rm `                <CONTAINER_ID or CONTAINER_NAME>
+`docker rm -f `              <CONTAINER_ID or CONTAINER_NAME>
 
-docker images
-docker rmi         <镜像ID>
-docker rmi -f     <镜像ID>。">
+`docker images`
+`docker rmi `        <镜像ID>
+`docker rmi -f `    <镜像ID>。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://lcm1840.github.io/lcm.github.io/post/an-zhuang-docker.html">
 <meta property="og:image" content="https://github.githubassets.com/favicons/favicon.svg">
@@ -152,8 +156,8 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><p>安装之前现卸载系统上原有的Docker<br>
-yum remove docker \</p>
+<div class="markdown-body" id="postBody"><h2>[安装之前现卸载系统上原有的Docker]</h2>
+<p><code class="notranslate">yum remove docker \</code></p>
 <blockquote>
 <pre class="notranslate"><code class="notranslate">              docker-client \
               docker-client-latest \
@@ -161,36 +165,34 @@ yum remove docker \</p>
               docker-latest \
               docker-latest-logrotate \
               docker-logrotate \
-              docker-engine
+              docker-engine`
 </code></pre>
 </blockquote>
-<p>2、安装需要的安装包yum-utils<br>
-yum install -y yum-utils<br>
-3、设置镜像仓库地址<br>
-yum-config-manager <br>
---add-repo <br>
-<a href="https://download.docker.com/linux/centos/docker-ce.repo" rel="nofollow">https://download.docker.com/linux/centos/docker-ce.repo</a>   ##此地址为官方的仓库地址，在国内建议不要用<br>
-yum-config-manager <br>
---add-repo <br>
-<a href="http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo" rel="nofollow">http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo</a>  #阿里云的镜像仓库地址<br>
-4、安装docker相关的引擎<br>
-#先更新yum软件包索引<br>
-yum makecache fase<br>
-默认安装最新的docker<br>
-yum install docker-ce docker-ce-cli containerd.io<br>
-5、启动docker<br>
-systemctl start docker<br>
-systemctl enable docker<br>
+<h2>2、安装需要的安装包yum-utils</h2>
+<p><code class="notranslate">yum install -y yum-utils</code></p>
+<h2>3、设置镜像仓库地址</h2>
+<p><code class="notranslate">yum-config-manager \ --add-repo \ https://download.docker.com/linux/centos/docker-ce.repo</code><br>
+##此地址为官方的仓库地址，在国内建议不要用<br>
+<code class="notranslate">yum-config-manager \ --add-repo \ http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo</code><br>
+#阿里云的镜像仓库地址</p>
+<h2>4、安装docker相关的引擎</h2>
+<p>#先更新yum软件包索引<br>
+<code class="notranslate">yum makecache fase</code></p>
+<h2>默认安装最新的docker</h2>
+<p><code class="notranslate">yum install docker-ce docker-ce-cli containerd.io</code></p>
+<h2>5、启动docker</h2>
+<p><code class="notranslate">systemctl start docker</code><br>
+<code class="notranslate">systemctl enable docker</code><br>
 验证安装是否成功<br>
-docker version</p>
-<p>重启容器<br>
-docker restart r</p>
-<p>docker ps -a</p>
-<p>docker rm                 &lt;CONTAINER_ID or CONTAINER_NAME&gt;<br>
-docker rm -f               &lt;CONTAINER_ID or CONTAINER_NAME&gt;</p>
-<p>docker images<br>
-docker rmi         &lt;镜像ID&gt;<br>
-docker rmi -f     &lt;镜像ID&gt;</p></div>
+<code class="notranslate">docker version</code></p>
+<h2>重启容器</h2>
+<p><code class="notranslate">docker restart r</code></p>
+<p><code class="notranslate">docker ps -a</code></p>
+<p><code class="notranslate">docker rm </code>                &lt;CONTAINER_ID or CONTAINER_NAME&gt;<br>
+<code class="notranslate">docker rm -f </code>              &lt;CONTAINER_ID or CONTAINER_NAME&gt;</p>
+<p><code class="notranslate">docker images</code><br>
+<code class="notranslate">docker rmi </code>        &lt;镜像ID&gt;<br>
+<code class="notranslate">docker rmi -f </code>    &lt;镜像ID&gt;</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
 <div class="comments" id="comments"></div>
