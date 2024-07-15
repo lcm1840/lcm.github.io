@@ -14,6 +14,14 @@
 docker run --name=wxedge --restart=always --privileged --net=host --tmpfs /run --tmpfs /tmp -v /data/wxedge_storage:/storage:rw -d registry.cn-hangzhou.aliyuncs.com/onething/wxedge
      ip：18888
 
+docker run -dit \
+  -v $PWD/ql:/ql/data \
+  -p 5700:5700 \
+  --name ql-debian \
+  --hostname ql-debian \
+  --restart unless-stopped \
+  whyour/qinglong:debian-python3.10
+
 1Panel 是新一代的 Linux 服务器运维管理面板
 RedHat / CentOS
 
@@ -31,6 +39,14 @@ curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_
 
 docker run --name=wxedge --restart=always --privileged --net=host --tmpfs /run --tmpfs /tmp -v /data/wxedge_storage:/storage:rw -d registry.cn-hangzhou.aliyuncs.com/onething/wxedge
      ip：18888
+
+docker run -dit \
+  -v $PWD/ql:/ql/data \
+  -p 5700:5700 \
+  --name ql-debian \
+  --hostname ql-debian \
+  --restart unless-stopped \
+  whyour/qinglong:debian-python3.10
 
 1Panel 是新一代的 Linux 服务器运维管理面板
 RedHat / CentOS
@@ -105,6 +121,13 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <div class="markdown-body" id="postBody"><p>bash &lt;(curl -s -L <a href="https://git.io/v2ray-setup.sh" rel="nofollow">https://git.io/v2ray-setup.sh</a>)</p>
 <p>docker run --name=wxedge --restart=always --privileged --net=host --tmpfs /run --tmpfs /tmp -v /data/wxedge_storage:/storage:rw -d registry.cn-hangzhou.aliyuncs.com/onething/wxedge<br>
 ip：18888</p>
+<p>docker run -dit <br>
+-v $PWD/ql:/ql/data <br>
+-p 5700:5700 <br>
+--name ql-debian <br>
+--hostname ql-debian <br>
+--restart unless-stopped <br>
+whyour/qinglong:debian-python3.10</p>
 <p>1Panel 是新一代的 Linux 服务器运维管理面板<br>
 RedHat / CentOS</p>
 <p>curl -sSL <a href="https://resource.fit2cloud.com/1panel/package/quick_start.sh" rel="nofollow">https://resource.fit2cloud.com/1panel/package/quick_start.sh</a> -o quick_start.sh &amp;&amp; sh quick_start.sh</p>

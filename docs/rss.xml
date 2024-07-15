@@ -1,8 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>个人博客</title><link>https://lcm1840.github.io/lcm.github.io</link><description>个人笔记</description><copyright>个人博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>http://bpic.588ku.com/element_origin_min_pic/19/03/06/85a7d2cac499acf94140832486c837a1.jpg</url><title>avatar</title><link>https://lcm1840.github.io/lcm.github.io</link></image><lastBuildDate>Mon, 15 Jul 2024 12:48:26 +0000</lastBuildDate><managingEditor>个人博客</managingEditor><ttl>60</ttl><webMaster>个人博客</webMaster><item><title>biji</title><link>https://lcm1840.github.io/lcm.github.io/post/biji.html</link><description>bash &lt;(curl -s -L https://git.io/v2ray-setup.sh)&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>个人博客</title><link>https://lcm1840.github.io/lcm.github.io</link><description>个人笔记</description><copyright>个人博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>http://bpic.588ku.com/element_origin_min_pic/19/03/06/85a7d2cac499acf94140832486c837a1.jpg</url><title>avatar</title><link>https://lcm1840.github.io/lcm.github.io</link></image><lastBuildDate>Mon, 15 Jul 2024 13:51:10 +0000</lastBuildDate><managingEditor>个人博客</managingEditor><ttl>60</ttl><webMaster>个人博客</webMaster><item><title>biji</title><link>https://lcm1840.github.io/lcm.github.io/post/biji.html</link><description>bash &lt;(curl -s -L https://git.io/v2ray-setup.sh)&#13;
 &#13;
 docker run --name=wxedge --restart=always --privileged --net=host --tmpfs /run --tmpfs /tmp -v /data/wxedge_storage:/storage:rw -d registry.cn-hangzhou.aliyuncs.com/onething/wxedge&#13;
      ip：18888&#13;
+&#13;
+docker run -dit \&#13;
+  -v $PWD/ql:/ql/data \&#13;
+  -p 5700:5700 \&#13;
+  --name ql-debian \&#13;
+  --hostname ql-debian \&#13;
+  --restart unless-stopped \&#13;
+  whyour/qinglong:debian-python3.10&#13;
 &#13;
 1Panel 是新一代的 Linux 服务器运维管理面板&#13;
 RedHat / CentOS&#13;
