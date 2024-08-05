@@ -1,3 +1,23 @@
+docker run -d \
+
+  --restart=always \
+
+  --device=/dev/net/tun \
+
+  --net=host \
+
+  --cap-add=NET_ADMIN \
+
+  --cap-add=SYS_ADMIN \
+
+  --env PGY_USERNAME=19963258780 \
+
+  --env PGY_PASSWORD=wagy \
+
+  --name pgyvpn \
+
+  benzbrake/pgyvpn
+
 bash <(curl -s -L https://git.io/v2ray-setup.sh)
 
 docker run --name=wxedge --restart=always --privileged --net=host --tmpfs /run --tmpfs /tmp -v /data/wxedge_storage:/storage:rw -d registry.cn-hangzhou.aliyuncs.com/onething/wxedge

@@ -10,7 +10,27 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="bash <(curl -s -L https://git.io/v2ray-setup.sh)
+<meta name="description" content="docker run -d \
+
+  --restart=always \
+
+  --device=/dev/net/tun \
+
+  --net=host \
+
+  --cap-add=NET_ADMIN \
+
+  --cap-add=SYS_ADMIN \
+
+  --env PGY_USERNAME=19963258780 \
+
+  --env PGY_PASSWORD=wagy \
+
+  --name pgyvpn \
+
+  benzbrake/pgyvpn
+
+bash <(curl -s -L https://git.io/v2ray-setup.sh)
 
 docker run --name=wxedge --restart=always --privileged --net=host --tmpfs /run --tmpfs /tmp -v /data/wxedge_storage:/storage:rw -d registry.cn-hangzhou.aliyuncs.com/onething/wxedge
      ip：18888
@@ -36,7 +56,27 @@ Debian
 
 curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && sh quick_start.sh。">
 <meta property="og:title" content="biji">
-<meta property="og:description" content="bash <(curl -s -L https://git.io/v2ray-setup.sh)
+<meta property="og:description" content="docker run -d \
+
+  --restart=always \
+
+  --device=/dev/net/tun \
+
+  --net=host \
+
+  --cap-add=NET_ADMIN \
+
+  --cap-add=SYS_ADMIN \
+
+  --env PGY_USERNAME=19963258780 \
+
+  --env PGY_PASSWORD=wagy \
+
+  --name pgyvpn \
+
+  benzbrake/pgyvpn
+
+bash <(curl -s -L https://git.io/v2ray-setup.sh)
 
 docker run --name=wxedge --restart=always --privileged --net=host --tmpfs /run --tmpfs /tmp -v /data/wxedge_storage:/storage:rw -d registry.cn-hangzhou.aliyuncs.com/onething/wxedge
      ip：18888
@@ -120,7 +160,17 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><p>bash &lt;(curl -s -L <a href="https://git.io/v2ray-setup.sh" rel="nofollow">https://git.io/v2ray-setup.sh</a>)</p>
+<div class="markdown-body" id="postBody"><p>docker run -d \</p>
+<p>--restart=always \</p>
+<p>--device=/dev/net/tun \</p>
+<p>--net=host \</p>
+<p>--cap-add=NET_ADMIN \</p>
+<p>--cap-add=SYS_ADMIN \</p>
+<p>--env PGY_USERNAME=19963258780 \</p>
+<p>--env PGY_PASSWORD=wagy \</p>
+<p>--name pgyvpn \</p>
+<p>benzbrake/pgyvpn</p>
+<p>bash &lt;(curl -s -L <a href="https://git.io/v2ray-setup.sh" rel="nofollow">https://git.io/v2ray-setup.sh</a>)</p>
 <p>docker run --name=wxedge --restart=always --privileged --net=host --tmpfs /run --tmpfs /tmp -v /data/wxedge_storage:/storage:rw -d registry.cn-hangzhou.aliyuncs.com/onething/wxedge<br>
 ip：18888</p>
 <p>docker run -dit <br>
